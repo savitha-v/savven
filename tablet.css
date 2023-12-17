@@ -1,0 +1,278 @@
+/* tablet.css */
+
+* {
+    box-sizing: border-box;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.linkedin img,
+.email img,
+.phone img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+@keyframes wavy {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-5px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    75% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.styled-table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 4px solid rgb(4, 12, 41);
+    /* Thicker border for the entire table */
+    color: black;
+}
+
+.styled-table th,
+.styled-table td {
+    border: 2px solid rgb(4, 12, 41);
+    padding: 10px;
+    text-align: left;
+}
+
+.styled-table td {
+    font-size: 20px;
+    /* Set the font size for table contents */
+}
+
+.styled-table th {
+    font-weight: bold;
+    /* Make headers bold */
+    font-style: italic;
+    /* Make headers italic */
+    background-color: rgb(209, 224, 239);
+    /* Apply background color to headers */
+    text-align: center;
+    border: 4px solid rgb(4, 12, 41);
+    /* Thicker border for header cells */
+    font-size: 24px;
+    /* Set the font size for headers */
+}
+
+.styled-table tbody tr:nth-child(even) {
+    background-color: rgb(209, 224, 239);
+    /* Apply alternative row colors */
+}
+
+.styled-table tbody tr:nth-child(odd) {
+    background-color: #bfe9cf;
+    /* Apply alternative row colors */
+}
+
+.styled-table tbody tr:first-child {
+    vertical-align: middle;
+    /* Align the first column to the middle */
+}
+
+.styled-table tbody tr td:first-child {
+    text-align: center;
+    /* Align the first column to the center */
+    border-right: 4px solid rgb(4, 12, 41);
+}
+
+.styled-table tbody tr td:nth-child(2) {
+    text-align: left;
+    /* Align the second column to the left */
+    border-left: 4px solid rgb(4, 12, 41);
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+h1 {
+    font-size: 7em;
+    font-weight: bold;
+    margin: 0;
+    background: linear-gradient(to right, #0004ff, #02f806);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-stroke: 2px black;
+    animation: wavy 1s infinite;
+}
+
+.custom-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.custom-list:last-child {
+    margin-bottom: 0;
+}
+
+.custom-list li {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.degree-name {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.university-name {
+    font-style: italic;
+    font-weight: bold;
+}
+
+body::after {
+    content: "";
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.spacing {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 1em 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.logo img {
+    height: 80px;
+    padding: 0 1em;
+    background-color: transparent;
+    margin-bottom: 20px;
+}
+
+.utd img,
+.uwg img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.venn-diagram {
+    text-align: center;
+}
+
+.venn-diagram img {
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #90C7E3;
+}
+
+.hero {
+    background-color: #3c5064;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.content {
+    padding: 2em;
+    color: white;
+}
+
+.columns {
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.column {
+    flex: 1 1 300px;
+    background-color: rgb(209, 224, 239);
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1em;
+    color: black;
+}
+
+.footer {
+    color: white;
+    text-align: right;
+    padding: 1em 1em;
+    bottom: 0;
+    width: 100%;
+}
+
+.tagline {
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+.column:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+#mobile {
+    display: none;
+}
+
+#desktop {
+    display: inline;
+}
