@@ -253,10 +253,6 @@ nav a:hover {
     color: black;
 }
 
-.overflow {
-    overflow-wrap: break-word;
-}
-
 .footer {
     color: white;
     text-align: right;
