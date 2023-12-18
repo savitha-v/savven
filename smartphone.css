@@ -194,7 +194,7 @@ header {
 .utd img,
 .uwg img {
     width: 7%;
-    margin-right: 10px;
+    display: block;
 }
 
 .venn-diagram {
