@@ -106,9 +106,8 @@ body {
     padding: 0;
     background-color: #f0f0f0;
     background-image: url('images/background.jpg');
-    background-size: cover;
-    background-position: center;
-    position: relative;
+    background-size: contain;
+    background-position: top left;
 }
 
 h1 {
