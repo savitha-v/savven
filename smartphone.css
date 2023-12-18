@@ -245,7 +245,7 @@ nav a:hover {
 }
 
 .column {
-    flex: 1 1 300px;
+    flex: 1 1 90%;
     background-color: rgb(209, 224, 239);
     padding: 1em;
     border-radius: 5px;
