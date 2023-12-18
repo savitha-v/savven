@@ -11,7 +11,7 @@
 .linkedin img,
 .email img,
 .phone img {
-    width: 50px;
+    width: 7%;
     margin-right: 10px;
 }
 
@@ -43,6 +43,7 @@
     border: 4px solid rgb(4, 12, 41);
     /* Thicker border for the entire table */
     color: black;
+    display: block;
 }
 
 .styled-table th,
@@ -50,6 +51,7 @@
     border: 2px solid rgb(4, 12, 41);
     padding: 10px;
     text-align: left;
+    display: block;
 }
 
 .styled-table td {
@@ -191,7 +193,7 @@ header {
 
 .utd img,
 .uwg img {
-    width: 50px;
+    width: 7%;
     margin-right: 10px;
 }
 
