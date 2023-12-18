@@ -150,6 +150,7 @@ h1 {
 .university-name {
     font-style: italic;
     font-weight: bold;
+    margin-top: 5px; /* Adjust top margin to reduce space */
 }
 
 body::after {
@@ -191,9 +192,9 @@ header {
     margin-bottom: 20px;
 }
 
-.utd img,
-.uwg img {
-    width: 7%;
+.utd img, .uwg img {
+    width: 30%; 
+    margin-right: 5px; 
 }
 
 .venn-diagram {
