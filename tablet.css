@@ -10,7 +10,7 @@
 
 .linkedin img,
 .email img,
-.phone img {
+.phone img, .resume img, .github img {
     width: 50px;
     margin-right: 10px;
 }

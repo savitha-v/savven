@@ -10,7 +10,7 @@
 
 .linkedin img,
 .email img,
-.phone img {
+.phone img, .resume img, .github img {
     width: 50px;
     /* Adjust the width of the logo as needed */
     margin-right: 10px;
