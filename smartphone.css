@@ -233,25 +233,29 @@ nav a:hover {
 }
 
 .content {
-    padding: 2em;
+    padding: 1em;
     color: white;
 }
 
 .columns {
     display: flex;
-    gap: 2em;
+    gap: 1em;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .column {
-    flex: 1 1 90%;
+    flex: 1 1 100%;
     background-color: rgb(209, 224, 239);
-    padding: 1em;
+    padding: 0.5em;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
     color: black;
+}
+
+.overflow {
+    overflow-wrap: break-word;
 }
 
 .footer {
