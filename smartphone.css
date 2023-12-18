@@ -191,10 +191,9 @@ header {
     margin-bottom: 20px;
 }
 
-.utd,
-.uwg {
+.utd img,
+.uwg img {
     width: 2%;
-    display: block;
 }
 
 .venn-diagram {
