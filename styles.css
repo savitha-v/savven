@@ -295,3 +295,27 @@ nav a:hover {
 #desktop {
     display: inline;
 }
+
+.skills-content img{
+    height: 140px;
+    justify-content: center;
+    align-items: center;
+}
+
+.column-skills {
+    flex: 1 1 300px;
+    background-color:#bfe9cf;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1em;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.column-skills:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
