@@ -319,3 +319,26 @@ nav a:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease;
 }
+
+#center ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    margin-right: 25px;
+}
+
+#center ul li{
+    height: auto; /* Adjust height based on content */
+}
+
+#center a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+    display: block; /* Make the link fill the li element */
+    padding: 10px 5px; /* Add some padding for better visibility and clickability */
+}
+
+#center a:hover {
+    color: #90C7E3;
+}
