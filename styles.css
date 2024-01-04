@@ -186,7 +186,7 @@ header {
     z-index: 1;
 }
 
-.container {
+.container-fluid {
     width: 100%;
     margin: 0 auto;
 }
@@ -220,7 +220,7 @@ header {
     display: block;
     /* Make the image a block element */
     margin: 0 auto;
-    /* Center the image horizontally within the parent container */
+    /* Center the image horizontally within the parent container-fluid */
     width: 30%;
 }
 
@@ -342,3 +342,43 @@ nav a:hover {
 #center a:hover {
     color: #90C7E3;
 }
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.credit-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-item:hover .credit-overlay {
+    opacity: 1;
+}
+
+/* Existing CSS styles */
