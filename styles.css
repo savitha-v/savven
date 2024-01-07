@@ -28,10 +28,6 @@
     align-items: center;
 }
 
-.portfolio a, .portfolio a:visited, .portfolio a:hover, .portfolio a:active {
-    color: blue;
-}
-
 @keyframes wavy {
     0% {
         transform: translateY(0);
@@ -236,7 +232,7 @@ header {
     /* Make the image a block element */
     margin: 0 auto;
     /* Center the image horizontally within the parent container-fluid */
-    width: 30%;
+    width: 50%;
 }
 
 nav ul {
@@ -408,6 +404,18 @@ nav a:hover {
     transition: opacity 0.5s ease;
 }
 
+.photo-gallery > div:nth-child(26) .credit-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* Stretch the overlay to cover the full width of the grid item */
+    height: 25%; /* Stretch the overlay to cover a quarter of the height of the grid item */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .gallery-item:hover img {
     transform: scale(1.1);
 }
@@ -422,16 +430,4 @@ nav a:hover {
 
 .column a, .column a:visited, .column a:hover, .column a:active {
     color: blue;
-}
-
-.photo-gallery > div:nth-child(26) .credit-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%; /* Stretch the overlay to cover the full width of the grid item */
-    height: 25%; /* Stretch the overlay to cover a quarter of the height of the grid item */
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
