@@ -11,10 +11,25 @@
 .linkedin img,
 .email img,
 .phone img, .resume img, .github img {
-    width: 50px;
+    width: 120px;
     /* Adjust the width of the logo as needed */
-    margin-right: 10px;
-    /* Add some spacing between the logo and the university name */
+    height: auto;
+}
+
+.linkedin, .email, .phone, .resume, .github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio a, .portfolio a:visited, .portfolio a:hover, .portfolio a:active {
+    color: blue;
 }
 
 @keyframes wavy {
@@ -345,18 +360,35 @@ nav a:hover {
 
 .photo-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 10px;
+}
+
+.photo-gallery > div:nth-child(26) {
+    grid-column: span 2; /* This will make the first item span two columns */
+    grid-row: span 2;    /* This will make the first item span two rows */
 }
 
 .gallery-item {
     position: relative;
     overflow: hidden;
+    background-color: #f2f5f89f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .gallery-item img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 150px;
+    transition: transform 0.5s ease;
+}
+
+/* Target the image inside the 26th item */
+.gallery-item:nth-child(26) img  {
+    width: 100%;  /* Stretch the image to cover the full width of the grid item */
+    height: 100%; /* Stretch the image to cover the full height of the grid item */
+    object-fit: cover; /* Resize the image to maintain its aspect ratio while filling the element */
     transition: transform 0.5s ease;
 }
 
@@ -365,7 +397,7 @@ nav a:hover {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.855);
     color: white;
     text-align: center;
     padding: 10px;
@@ -381,4 +413,6 @@ nav a:hover {
     opacity: 1;
 }
 
-/* Existing CSS styles */
+.credit-overlay a, .credit-overlay a:visited, .credit-overlay a:hover, .credit-overlay a:active {
+    color: white;
+}
