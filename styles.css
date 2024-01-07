@@ -362,6 +362,9 @@ nav a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .photo-gallery > div:nth-child(26) {
@@ -415,4 +418,20 @@ nav a:hover {
 
 .credit-overlay a, .credit-overlay a:visited, .credit-overlay a:hover, .credit-overlay a:active {
     color: white;
+}
+
+.column a, .column a:visited, .column a:hover, .column a:active {
+    color: blue;
+}
+
+.photo-gallery > div:nth-child(26) .credit-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* Stretch the overlay to cover the full width of the grid item */
+    height: 25%; /* Stretch the overlay to cover a quarter of the height of the grid item */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
