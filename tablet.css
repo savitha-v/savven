@@ -15,6 +15,18 @@
     margin-right: 10px;
 }
 
+.linkedin, .email, .phone, .resume, .github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @keyframes wavy {
     0% {
         transform: translateY(0);
@@ -344,4 +356,57 @@ nav a:hover {
 
 #center a:hover {
     color: #90C7E3;
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    background-color: #f2f5f89f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-item img {
+    width: auto;
+    height: 150px;
+    transition: transform 0.5s ease;
+}
+
+.credit-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.855);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-item:hover .credit-overlay {
+    opacity: 1;
+}
+
+.credit-overlay a, .credit-overlay a:visited, .credit-overlay a:hover, .credit-overlay a:active {
+    color: white;
+}
+
+.column a, .column a:visited, .column a:hover, .column a:active {
+    color: blue;
 }
